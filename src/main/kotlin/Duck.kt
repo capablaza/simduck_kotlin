@@ -8,5 +8,9 @@ abstract class Duck {
         println("I can swim!")
     }
 
+    fun fly() {
+        println("I can fly")
+    }
+
     abstract fun display()
 }

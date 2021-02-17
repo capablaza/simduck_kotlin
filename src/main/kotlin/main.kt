@@ -13,6 +13,7 @@ fun printDuck(duck : Duck){
     duck.display()
     duck.quack()
     duck.swim()
+    duck.fly()
     println("--------------------------------")
 }
 
