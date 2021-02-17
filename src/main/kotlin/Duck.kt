@@ -8,7 +8,7 @@ abstract class Duck {
         println("I can swim!")
     }
 
-    fun fly() {
+    open fun fly() {
         println("I can fly")
     }
 
