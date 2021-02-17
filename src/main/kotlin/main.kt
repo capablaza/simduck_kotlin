@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     printDuck(rubberDuck)
 }
 
-fun printDuck(duck : Duck){
+fun printDuck(duck : RealGreenDuck){
 
     duck.display()
     duck.quack()
@@ -17,3 +17,19 @@ fun printDuck(duck : Duck){
     println("--------------------------------")
 }
 
+fun printDuck(duck : RedHeadDuck){
+
+    duck.display()
+    duck.quack()
+    duck.swim()
+    duck.fly()
+    println("--------------------------------")
+}
+fun printDuck(duck : RubberDuck){
+
+    duck.display()
+    duck.quack()
+    duck.swim()
+    duck.fly()
+    println("--------------------------------")
+}
