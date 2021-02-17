@@ -1,19 +1,28 @@
 abstract class Duck {
 
-    lateinit var flyBehavior: FlyBehavior
-    lateinit var quackBehavior: QuackBehavior
+    internal lateinit var flyBehavior: FlyBehavior
+    internal lateinit var quackBehavior: QuackBehavior
 
     fun swim() {
         println("I can swim!")
     }
 
-    fun performQuack(){
+    fun performQuack() {
         this.quackBehavior.quack()
     }
 
-    fun performFly(){
+    fun performFly() {
         this.flyBehavior.fly()
     }
+
+    fun setFlyBehavior(flyBehavior: FlyBehavior) {
+        this.flyBehavior = flyBehavior
+    }
+
+    fun setQuackBehavior(quackBehavior: QuackBehavior) {
+        this.quackBehavior = quackBehavior
+    }
+
 
     abstract fun display()
 }

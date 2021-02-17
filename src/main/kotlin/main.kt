@@ -6,6 +6,10 @@ fun main(args: Array<String>) {
     printDuck(realGreenDuck)
     printDuck(redHeadDuck)
     printDuck(rubberDuck)
+
+    rubberDuck.setFlyBehavior(FlyWithWings())
+    printDuck(rubberDuck)
+
 }
 
 fun printDuck(duck : RealGreenDuck){
