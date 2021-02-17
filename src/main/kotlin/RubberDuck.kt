@@ -1,13 +1,12 @@
-class RubberDuck : Duck(), Flyable, Quackable {
+class RubberDuck : Duck {
+
+    constructor() {
+        this.flyBehavior = FlyNoWay()
+        this.quackBehavior = Squeak()
+    }
+
     override fun display() {
-        println("I'm RubberDuck!")
+        println("I'm Rubber Duck!")
     }
 
-    override fun fly() {
-        println("I can't fly")
-    }
-
-    override fun quack() {
-        println("I can do quack!")
-    }
 }

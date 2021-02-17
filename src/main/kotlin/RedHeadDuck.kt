@@ -1,13 +1,12 @@
-class RedHeadDuck : Duck(),  Flyable, Quackable {
+class RedHeadDuck : Duck{
+
+    constructor() {
+        this.flyBehavior = FlyWithWings()
+        this.quackBehavior = Quack()
+    }
+
     override fun display() {
-        println("I'm RealHeadDuck")
+        println("I'm Red Head Duck")
     }
 
-    override fun fly() {
-        println("I can fly")
-    }
-
-    override fun quack() {
-        println("I can do quack!")
-    }
 }

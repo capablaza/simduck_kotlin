@@ -11,25 +11,25 @@ fun main(args: Array<String>) {
 fun printDuck(duck : RealGreenDuck){
 
     duck.display()
-    duck.quack()
+    duck.performQuack()
     duck.swim()
-    duck.fly()
+    duck.performFly()
     println("--------------------------------")
 }
 
 fun printDuck(duck : RedHeadDuck){
 
     duck.display()
-    duck.quack()
+    duck.performQuack()
     duck.swim()
-    duck.fly()
+    duck.performFly()
     println("--------------------------------")
 }
 fun printDuck(duck : RubberDuck){
 
     duck.display()
-    duck.quack()
+    duck.performQuack()
     duck.swim()
-    duck.fly()
+    duck.performFly()
     println("--------------------------------")
 }
